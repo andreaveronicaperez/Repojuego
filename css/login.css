@@ -1,0 +1,26 @@
+.form-login{
+  margin-top: 100px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: normal;
+}
+
+body{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-image: url(../imagenes/fondo3.jpg);
+background-size: 100%;
+
+}
+a{
+color: black;
+}
+.formulario .casillero{
+width: 300px;
+}
+.avatar{
+  margin-bottom: 20px;
+}
