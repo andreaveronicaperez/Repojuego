@@ -1,0 +1,37 @@
+*{
+    background-color: lightblue;
+}
+img {
+    display:block;
+    margin: auto;
+    padding: auto;
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+h1 {
+    color:blue;
+    display:block;
+    margin: auto;
+    padding: auto;
+    font-size: 350%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 33%;
+}
+
+h2{
+    color:blue;
+    display:block;
+    margin: auto;
+    padding: auto;
+    font-size: 350%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 36%;
+
+}
+footer{
+    margin-left: 38%;
+    margin-top: 1%;
+}
