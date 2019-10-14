@@ -11,8 +11,12 @@ body{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-image: url(../imagenes/fondo3.jpg);
-background-size: 100%;
+background-image: url(../imagenes/fondo12.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+image-resolution: snap;
 
 }
 a{
