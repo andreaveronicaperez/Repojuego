@@ -1,0 +1,54 @@
+
+body{
+  background-image: url(../imagenes/fondo12.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-resolution: snap;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+  width: 1366px;
+}
+
+.bg-light {
+    background-color: #00c0d1!important;
+}
+
+#navbarSupportedContent{
+  justify-content: flex-end;
+}
+
+
+header nav div form .btn-outline-success{
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+header nav div form .btn-outline-success:hover{
+  background: white!important;
+  border-color: #007bff!important;
+  color: #007bff!important;
+
+}
+
+header nav .navbar-brand{
+  font-family: sans-serif;
+  }
+
+
+main{
+  padding: 20px;
+}
+
+.Preguntas nav ul li{
+  list-style: none;
+}
+
+@media (max-width:700px) {
+  aside{
+    display: none;
+  }
+}
