@@ -6,7 +6,9 @@ body{
   background-attachment: fixed;
   background-size: cover;
   image-resolution: snap;
+
 }
+
 
 .navbar navbar-expand-lg navbar-light bg-light{
   width: 1366px;
@@ -18,6 +20,13 @@ body{
 
 #navbarSupportedContent{
   justify-content: flex-end;
+}
+
+header nav a .logo{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -47,8 +56,22 @@ main{
   list-style: none;
 }
 
+
+footer{
+  background: #fff;
+  justify-content: center;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
 @media (max-width:700px) {
   aside{
     display: none;
+  }
+
+  footer{
+    font-size: 10px;
   }
 }

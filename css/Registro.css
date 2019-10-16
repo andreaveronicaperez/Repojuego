@@ -3,22 +3,41 @@ body {
   padding: 0;
   background-color: lightblue;
   margin-left: 30%;
+  background-image: url(../imagenes/fondo12.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-resolution: snap;
+
 }
 
 header{
-  background-color: BLUE;
+  background-color: #00c0d1;
   height: 60px;
   font-weight: bold;
-  padding: 15px;
+  padding: 5px;
+}
+
+header div{
+  max-width: 100%;
+
+}
+
+header div a .logo{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 form.needs-validation {
-  background-color: lightblue;
   padding: 20px;
   text-align: center;
   margin-top: 60px;
   padding: 10%;
   }
+
 div.form-row label{
 font-weight: bold;
 }
@@ -40,6 +59,22 @@ button.btn.btn-primary{
   margin-top: 15px;
 }
 
+button.btn.btn-primary:hover{
+
+  color: #007bff!important;
+  background-color: #fff!important;
+  border-color: #007bff!important;
+}
+
+footer{
+  background: #fff;
+  justify-content: center;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
 @media (max-width:545px){
   form.needs-validation{
     max-width: 100%;
@@ -48,7 +83,7 @@ button.btn.btn-primary{
   .a{
     max-width: 100%;
     flex: 100%;
-    
+
   }
 
 }

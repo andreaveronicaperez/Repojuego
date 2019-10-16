@@ -1,6 +1,14 @@
-*{
-    background-color: lightblue;
+body{
+  background-image: url(../imagenes/fondo12.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-resolution: snap;
+
 }
+
+
 img {
     display:block;
     margin: auto;
