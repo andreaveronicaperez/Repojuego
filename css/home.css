@@ -9,7 +9,123 @@ body{
 }
 
 
-img {
+
+header{
+  margin-bottom: 20px;
+  padding-left: : 10px;
+}
+
+header nav{
+      margin-left: 10px!important;
+      margin-right: 0px;
+  }
+
+
+header nav ul li a {
+  background: #337cc4!important;
+  color: white!important;
+  font-family: 'Signika', sans-serif;
+}
+
+header nav ul li a:hover {
+
+  background: #fff!important;
+  color: #337cc4!important;
+  }
+
+.argento{
+  display: flex;
+
+}
+
+main div .logo{
+
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+
+
+h1 {
+    color:#1e4261;
+    font-family: 'Satisfy', cursive;
+    font-size: 500%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36%;
+    margin-top: 35px;
+
+}
+
+
+
+.btn-primary{
+  margin-left: 40%;
+  margin-top: 30px;
+  background: #337cc4!important;
+  font-family: 'Satisfy', cursive!important;
+  font-size: 30px;
+  height: 80px;
+  width: 200px;
+}
+
+main div .btn-primary:hover{
+  background: white!important;
+  border-color: #007bff!important;
+  color: #007bff!important;
+}
+
+
+
+.footer{
+  background: #fff;
+  justify-content: center;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+@media (max-width:600px) {
+
+  header nav ul li a{
+    width: 80px;
+    height: 36px;
+    font-size: 7px;
+  }
+
+header nav ul li .nav-link #HOME, #REGISTRATE, #LOGIN{
+    padding-top: 15px!important;
+  }
+
+  h1 {
+        margin-left: 20%;
+        font-size: 300%;
+
+  }
+
+  .btn-primary{
+    margin-left: 25%;
+    height: 60px;
+    width: 180px;
+
+  }
+
+  .footer{
+    font-size: 10px;
+    padding-left: 20px;
+  }
+}
+
+
+/*img {
     display:block;
     margin: auto;
     padding: auto;
@@ -17,16 +133,7 @@ img {
     margin-top: 0%;
     margin-bottom: 2%;
 }
-h1 {
-    color:blue;
-    display:block;
-    margin: auto;
-    padding: auto;
-    font-size: 350%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 33%;
-}
+
 
 h2{
     color:blue;
@@ -38,8 +145,4 @@ h2{
     margin-bottom: 2%;
     margin-left: 36%;
 
-}
-footer{
-    margin-left: 38%;
-    margin-top: 1%;
-}
+}*/
