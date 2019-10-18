@@ -19,7 +19,7 @@ header div a .logo{
 
 
 .form-login{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 h3{
@@ -51,6 +51,9 @@ width: 300px;
     color: #007bff!important;
     background-color: #fff!important;
     border-color: #007bff!important;
+}
+.linea-texto{
+  margin-bottom: 20px;
 }
 
 footer{
