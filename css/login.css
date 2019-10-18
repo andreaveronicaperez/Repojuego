@@ -1,5 +1,5 @@
 header{
-  background-color: #00c0d1;
+  background-color: #adf0f0;
   height: 60px;
   font-weight: bold;
   padding: 5px;
@@ -53,11 +53,23 @@ width: 300px;
     border-color: #007bff!important;
 }
 
-footer{
+.footer{
   background: #fff;
   justify-content: center;
   font-size: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 35%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
 
+@media (max-width:600px) {
+
+  .footer{
+    font-size: 10px;
+    padding-left: 20px;
+  }
 }

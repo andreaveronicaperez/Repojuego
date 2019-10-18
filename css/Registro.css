@@ -13,7 +13,7 @@ body {
 }
 
 header{
-  background-color: #00c0d1;
+  background-color: #adf0f0;
   height: 60px;
   font-weight: bold;
   padding: 5px;
@@ -28,13 +28,14 @@ header div a .logo{
   height: 50px;
   justify-content: center;
   align-items: center;
+  padding-left: 20px;
 
 }
 
 form.needs-validation {
   padding: 20px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 10%;
   }
 
@@ -67,12 +68,20 @@ button.btn.btn-primary:hover{
 }
 
 footer{
+  display: flex;
+}
+
+.footer{
   background: #fff;
   justify-content: center;
   font-size: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
-
+  padding-left: 35%!important;
+  width: 100%;
+  position: fixed!important;
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width:545px){
@@ -83,6 +92,11 @@ footer{
   .a{
     max-width: 100%;
     flex: 100%;
+  }
+
+  .footer{
+      font-size: 10px;
+      padding-left: 20px;
 
   }
 
