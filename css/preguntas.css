@@ -34,6 +34,7 @@ header nav div form .btn-outline-success{
   background: #007bff;
   border-color: #007bff;
   color: white;
+  font-family: 'Signika', sans-serif;
 }
 
 header nav div form .btn-outline-success:hover{
@@ -52,8 +53,28 @@ main{
   padding: 20px;
 }
 
+main div h1{
+  font-family: 'Satisfy', cursive!important;
+  font-size: 75px;
+  color:#1e4261;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+main div h2{
+  color:#1e4261;
+  font-family: 'Signika', sans-serif;
+  margin-top: 30px;
+}
+
+main div p{
+  text-align: justify;
+  font-family: 'Signika', sans-serif;
+}
+
 .Preguntas nav ul li{
   list-style: none;
+  font-family: 'Signika', sans-serif;
 }
 
 footer{
@@ -76,6 +97,15 @@ footer{
 @media (max-width:700px) {
   aside{
     display: none;
+  }
+
+  main div h1{
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  main div h2{
+    font-size: 25px!important;
   }
 
   .footer{

@@ -32,7 +32,11 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 background-image: url(../imagenes/fondo12.jpg);
-background-size: 100%;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+image-resolution: snap;
 
 }
 a{
@@ -44,8 +48,6 @@ width: 300px;
 .avatar{
   margin-bottom: 20px;
 }
-
-
 
 .boton-face .btn-primary:hover, .formulario form p .btn-primary:hover {
     color: #007bff!important;
