@@ -35,9 +35,17 @@ header div a .logo{
 form.needs-validation {
   padding: 20px;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 50px!important;
+  padding-bottom: 0px!important;
   padding: 10%;
   }
+
+form.needs-validation div h1{
+  font-family: 'Satisfy', cursive!important;
+  font-size: 60px;
+  color:#1e4261;
+  margin-bottom: 40px;
+}
 
 div.form-row label{
   font-weight: bold;
@@ -91,6 +99,11 @@ footer{
     max-width: 100%;
     flex: 100%;
   }
+
+  form.needs-validation div h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
   .a{
     max-width: 100%;
     flex: 100%;
@@ -98,7 +111,8 @@ footer{
 
   .footer{
       font-size: 10px;
-      padding-left: 20px;
+      padding-left: 30px!important;
+
 
   }
 
