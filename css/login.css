@@ -1,8 +1,23 @@
+
+
+body{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-image: url(../imagenes/fondo12.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+image-resolution: snap;
+
+}
 header{
   background-color: #adf0f0;
   height: 60px;
   font-weight: bold;
   padding: 5px;
+
 }
 
 header div{
@@ -17,9 +32,9 @@ header div a .logo{
 
 }
 
-
 .form-login{
-  margin-top: 50px;
+  margin-top: 30px;
+  font-family: 'Signika', sans-serif;
 }
 
 h3{
@@ -27,21 +42,6 @@ h3{
   font-weight: normal;
 }
 
-body{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-background-image: url(../imagenes/fondo12.jpg);
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-image-resolution: snap;
-
-}
-a{
-color: black;
-}
 .formulario .casillero{
 width: 300px;
 }
@@ -58,6 +58,9 @@ width: 300px;
   margin-bottom: 20px;
 }
 
+footer{
+  display: flex;
+}
 .footer{
   background: #fff;
   justify-content: center;
@@ -66,15 +69,15 @@ width: 300px;
   padding-bottom: 5px;
   padding-left: 35%;
   width: 100%;
-  position: fixed;
   bottom: 0;
   left: 0;
+  position: fixed;
 }
 
-@media (max-width:600px) {
+@media (max-width:665px) {
 
   .footer{
     font-size: 10px;
-    padding-left: 20px;
-  }
+    padding-left: 10%;
+      }
 }
