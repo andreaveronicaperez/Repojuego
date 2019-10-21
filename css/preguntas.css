@@ -9,10 +9,16 @@ body{
 
 }
 
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+}
 
 .navbar navbar-expand-lg navbar-light bg-light{
   width: 1366px;
-}
+  }
 
 .bg-light {
     background-color:#adf0f0!important;
@@ -48,9 +54,14 @@ header nav .navbar-brand{
   font-family: sans-serif;
   }
 
+aside nav{
+  position: fixed;
+}
+
 
 main{
   padding: 20px;
+  padding-top: 70px;
 }
 
 main div h1{
@@ -59,6 +70,7 @@ main div h1{
   color:#1e4261;
   margin-top: 20px;
   margin-bottom: 50px;
+
 }
 
 main div h2{

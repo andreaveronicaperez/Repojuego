@@ -33,7 +33,7 @@ header nav ul li a:hover {
   color: #337cc4!important;
   }
 
-.argento{
+main{
   display: flex;
 
 }
@@ -42,19 +42,36 @@ main div .logo{
 
   justify-content: center;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 150px;
 }
 
-
+.desafio{
+  padding-top: 50px;
+}
 
 h1 {
     color:#1e4261;
     font-family: 'Satisfy', cursive;
     font-size: 500%;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
-    margin-left: 36%;
-    margin-top: 35px;
+    margin-left: 0px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    transform: rotate(-5deg);
+
+}
+
+p{
+  color:#1e4261;
+  font-family: 'Satisfy', cursive;
+  font-size: 250%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 
 }
 
@@ -95,20 +112,40 @@ main div .btn-primary:hover{
 
 @media (max-width:600px) {
 
+
   header nav ul li a{
     width: 80px;
     height: 36px;
     font-size: 7px;
+
   }
 
-header nav ul li .nav-link #HOME, #REGISTRATE, #LOGIN{
-    padding-top: 15px!important;
+  header nav ul li #HOME, #REGISTRATE, #LOGIN{
+    padding-top: 12px!important;
+  }
+
+
+  main div .logo{
+    padding-left: 30px;
+  }
+
+  .desafio{
+    padding-top: 10px;
   }
 
   h1 {
-        margin-left: 20%;
-        font-size: 300%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    font-size: 300%;
 
+  }
+
+  p{
+    font-size: 120%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .btn-primary{
