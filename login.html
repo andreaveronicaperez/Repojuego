@@ -28,7 +28,7 @@
           </div>
 
           <div class="boton-face">
-            <button type="button" class="btn btn-primary "><img width="30 30"src="imagenes/Facebook_Logo_(2019).png" alt="logo-face"> Logueate con Facebook</button>
+            <button type="button" class="login-face btn btn-primary "><img width="30 30"src="imagenes/Facebook_Logo_(2019).png" alt="logo-face"> Logueate con Facebook</button>
           </div>
           <div class="linea-texto">
 
@@ -41,11 +41,17 @@
             <form class="" action="index.html" method="post">
               <p>
                 <label for="email"></label>
-                <input class= casillero id="email" type="email" name="email" value="" placeholder="Ingresa tu correo electrónico">
+                <input class= "casillero email" id="email" type="email" name="email" value="" placeholder="Ingresa tu correo electrónico">
+              </p>
+              <p>
+                <span class="errorEmail"></span>
               </p>
               <p>
                 <label for="password"></label>
-                <input class= casillero id="password" type="password" name="password" value="" placeholder="Ingresa tu contraseña">
+                <input class= "casillero password" id="password" type="password" name="password" value="" placeholder="Ingresa tu contraseña">
+              </p>
+              <p>
+                <span class="errorContraseña"></span>
               </p>
               <p>
                 <input type="checkbox" name="recordame" value="si" checked>
@@ -55,7 +61,7 @@
                 <a href="#">¿Olvidaste tu contraseña?</a>
               </p>
               <p>
-                <button type="button" class="btn btn-primary btn-lg">Iniciar Sesión</button>
+                <button type="button" class="loginHome btn btn-primary btn-lg">Iniciar Sesión</button>
               </p>
               <p>
                 ¿Todavía no tenés una cuenta? <a href="Registrarse.html">Registrate</a>
@@ -72,5 +78,8 @@
         </div>
       </footer>
     </div>
+    <script src="javascript/login.js"type="text/javascript">
+
+    </script>
   </body>
 </html>
