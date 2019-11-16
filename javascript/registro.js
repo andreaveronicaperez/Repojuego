@@ -1,12 +1,12 @@
 window.addEventListener('load',function(){
-  var boton= document.querySelector ("button.loginHome");
+  var boton= document.querySelector ("button.btn.btn-primary");
   boton.addEventListener('click',function(){
     var errores= false;
     var email= document.querySelector("input.email");
-    var contraseña= document.querySelector("input.password");
+    var nombre= document.querySelector("input.valida-nombre");
 
     var errorEmail= document.querySelector("span.errorEmail");
-    var errorContraseña= document.querySelector("span.errorContraseña");
+    var errorNombre= document.querySelector("span.errorNombre");
     var regexMail= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
   //  email.onblur=function(){
@@ -25,20 +25,20 @@ window.addEventListener('load',function(){
 //}
 
 
-    if(contraseña.value == ""){
-      errorContraseña.innerHTML= "Este campo es obligatorio";
-      contraseña.style.border= "1px solid red";
+    if(nombre.value == ""){
+      errorNombre.innerHTML= "Este campo es obligatorio";
+      nombre.style.border= "1px solid red";
       errores=true;
-    }else if( contraseña.value.length <5){
-      errorContraseña.innerHTML= "Debe contener al menos 5 caracteres"
-      contraseña.style.border= "1px solid red";
+    }else if( nombre.value.length <2){
+      errorNombre.innerHTML= "Debe contener al menos 2 caracteres"
+      nombre.style.border= "1px solid red";
       errores= true;
     }else {
-      errorContraseña.innerHTML= "";
-      contraseña.style.border= "1px solid green";
+      errorNombre.innerHTML= "";
+      nombre.style.border= "1px solid green";
     }
 
 
 
-  })
-})
+  });
+});

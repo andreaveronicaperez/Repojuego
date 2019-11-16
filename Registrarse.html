@@ -23,10 +23,10 @@
         <a class="nav-link" href="#">REGISTRATE <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">LOGIN</a>
+        <a class="nav-link" href="login.html">LOGIN</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">PREGUNTAS FRECUENTES</a>
+        <a class="nav-link" href="preguntas.html">PREGUNTAS FRECUENTES</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -46,7 +46,7 @@
         <div class="col-12 col-md-4">
           <label>Nombre/s</label>
           <input type="text" class="form-control valida-nombre"  placeholder="Nombre" value="" required>
-          <span class="error-nombre"></span>
+          <span class="errorNombre"></span>
         </div>
         <div class="col-12 col-md-4">
           <label>Apellido</label>
@@ -55,8 +55,8 @@
         </div>
         <div class="col-12 col-md-4">
           <label>Email</label>
-          <input type="text" class="form-control"  placeholder="Email" value="" required>
-
+          <input type="text" class="email form-control"  placeholder="Email" value="" required>
+          <span class="errorEmail"></span>
         </div>
         <div class="col-12 col-md-4">
           <label>Apodo</label>
@@ -106,7 +106,7 @@
           </div>
         </div>
       </div>
-      <button class="boton-registo btn btn-primary" type="submit">Registrarme</button>
+      <button class="boton-registro btn btn-primary" type="submit">Registrarme</button>
     </form>
     <footer class="row">
       <div class="col-12 footer">
@@ -114,56 +114,10 @@
       </div>
     </footer>
 
-    <script>
-window.addEventListener('load', function() {
-  var boton= document.querySelector ("button.boton-registro");
-  boton.addEventListener('click',function(){
-    var errores= false;
-    var nombre= document.querySelector("input.valida-nombre");
-    var apellido= document.querySelector("input.email");
-    var apodo= document.querySelector("input.email");
-    var contraseña= document.querySelector("input.password");
-    var repiteContraseña= document.querySelector("input.email");
-    var provincia= document.querySelector("input.email");
-    var ciudad= document.querySelector("input.email");
+    <script src= "javascript/registro.js" stype="text/javascript">
 
-    var errorNombre= document.querySelector("span.error-nombre");
-    var errorEmail= document.querySelector("span.errorEmail");
-    var errorContraseña= document.querySelector("span.errorContraseña");
-
-    if(nombre.value == ""){
-      errorNombre.innerHTML= "Este campo es obligatorio";
-      nombre.style.border= "1px solid red";
-      errores=true;
-    }else if( email.value.length <2){
-      errorNombre.innerHTML= "Debe contener al menos 2 caracteres";
-      nombre.style.border= "1px solid red";
-      errores= true;
-    }else {
-      errorNombre.innerHTML= "";
-      nombre.style.border= "1px solid green";
-    }
-
-
-    if(contraseña.value == ""){
-      errorContraseña.innerHTML= "Este campo es obligatorio";
-      contraseña.style.border= "1px solid red";
-      errores=true;
-    }else if( contraseña.value.length <5){
-      errorContraseña.innerHTML= "Debe contener al menos 5 caracteres"
-      contraseña.style.border= "1px solid red";
-      errores= true;
-    }else {
-      errorContraseña.innerHTML= "";
-      contraseña.style.border= "1px solid green";
-    }
-
-
-
-  });
-
-});
-
+    </script>
+<script type="text/javascript">
 window.addEventListener('load', function() {
 
 
@@ -184,8 +138,9 @@ fetch("https://apis.datos.gob.ar/georef/api/provincias")
 
 });
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
