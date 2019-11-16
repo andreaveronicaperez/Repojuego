@@ -136,7 +136,7 @@ footer{
   left: 0;
 }
 
-@media (max-width:545px){
+@media (max-width:990px){
 
   header nav .navbar-brand{
     font-size: 25px;
@@ -169,6 +169,7 @@ footer{
   header div .form-inline{
     display: none!important;
   }
+
   form.needs-validation{
     max-width: 100%;
     flex: 100%;
