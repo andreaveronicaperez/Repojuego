@@ -62,11 +62,17 @@
             <form class="" action="index.html" method="post">
               <p>
                 <label for="email"></label>
-                <input class= casillero id="email" type="email" name="email" value="" placeholder="Ingresa tu correo electrónico">
+                <input class= "casillero email" id="email" type="email" name="email" value="" placeholder="Ingresa tu correo electrónico">
+              </p>
+              <p>
+                <span class="errorEmail"></span>
               </p>
               <p>
                 <label for="password"></label>
-                <input class= casillero id="password" type="password" name="password" value="" placeholder="Ingresa tu contraseña">
+                <input class= "casillero password" id="password" type="password" name="password" value="" placeholder="Ingresa tu contraseña">
+              </p>
+              <p>
+                <span class="errorContraseña"></span>
               </p>
               <p>
                 <input type="checkbox" name="recordame" value="si" checked>
@@ -76,7 +82,7 @@
                 <a href="#">¿Olvidaste tu contraseña?</a>
               </p>
               <p>
-                <button type="button" class="btn btn-primary btn-lg">Iniciar Sesión</button>
+                <button type="button" class="loginHome btn btn-primary btn-lg">Iniciar Sesión</button>
               </p>
               <p>
                 ¿Todavía no tenés una cuenta? <a href="Registrarse.html">Registrate</a>
@@ -94,51 +100,12 @@
       </footer>
     </div>
 
-<script  stype="text/javascript">
-  window.addEventListener('load',function(){
-  var boton= document.querySelector ("button.loginHome");
-  boton.addEventListener('click',function(){
-    var errores= false;
-    var email= document.querySelector("input.email");
-    var contraseña= document.querySelector("input.password");
+<script src= "javascript/login.js" stype="text/javascript">
 
-    var errorEmail= document.querySelector("span.errorEmail");
-    var errorContraseña= document.querySelector("span.errorContraseña");
-
-    if(email.value == ""){
-      errorEmail.innerHTML= "Este campo es obligatorio";
-      email.style.border= "1px solid red";
-      errores=true;
-    }else if( email.value.length <5){
-      errorEmail.innerHTML= "Debe contener al menos 5 caracteres"
-      email.style.border= "1px solid red";
-      errores= true;
-    }else {
-      errorEmail.innerHTML= "";
-      email.style.border= "1px solid green";
-    }
-
-
-    if(contraseña.value == ""){
-      errorContraseña.innerHTML= "Este campo es obligatorio";
-      contraseña.style.border= "1px solid red";
-      errores=true;
-    }else if( contraseña.value.length <5){
-      errorContraseña.innerHTML= "Debe contener al menos 5 caracteres"
-      contraseña.style.border= "1px solid red";
-      errores= true;
-    }else {
-      errorContraseña.innerHTML= "";
-      contraseña.style.border= "1px solid green";
-    }
-
-
-
-  })
-})
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+</body>
 </html>
