@@ -11,22 +11,58 @@ body{
 
 header{
   position: fixed;
+  left: 0px;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
+  margin-bottom: 70px;
 
 }
 
-.navbar navbar-expand-lg navbar-light bg-light{
-  width: 1366px;
+
+.bg-light{
+    width: 100%!important;
+    background: #337cc4!important;
+    width: 100%!important;
   }
 
-.bg-light {
-    background-color:#adf0f0!important;
+header .navbar-expand-lg{
+      margin-left: 0px!important;
+
+  }
+
+header nav .navbar-brand{
+    color: white!important;
+    font-family: 'Signika', sans-serif !important;
+
+  }
+
+
+header nav ul li a {
+  background: #337cc4!important;
+  color: white!important;
+  font-family: 'Signika', sans-serif;
+  margin-left: 70px;
 }
 
-#navbarSupportedContent{
-  justify-content: flex-end;
-}
+header nav ul li a:hover {
+
+  background: #fff!important;
+  color: #337cc4!important;
+  }
+
+header nav div form .btn-outline-success{
+    background: #007bff!important;
+    border-color: solid 0.5px rgba(255, 255, 255, 0.5)!important;
+    color: white!important;
+    font-family: 'Signika', sans-serif;
+  }
+
+header nav div form .btn-outline-success:hover{
+    background-color: white!important;
+    border-color: #007bff!important;
+    color: #007bff!important;
+
+  }
 
 header nav a .logo{
   height: 50px;
@@ -34,30 +70,6 @@ header nav a .logo{
   align-items: center;
 
 }
-
-
-header nav div form .btn-outline-success{
-  background: #007bff;
-  border-color: #007bff;
-  color: white;
-  font-family: 'Signika', sans-serif;
-}
-
-header nav div form .btn-outline-success:hover{
-  background: white!important;
-  border-color: #007bff!important;
-  color: #007bff!important;
-
-}
-
-header nav .navbar-brand{
-  font-family: sans-serif;
-  }
-
-aside nav{
-  position: fixed;
-}
-
 
 main{
   padding: 20px;
@@ -107,6 +119,39 @@ footer{
 }
 
 @media (max-width:700px) {
+
+  header nav .navbar-brand{
+    font-size: 25px;
+    margin-bottom: 3px;
+
+  }
+
+  header nav .navbar-toggler{
+    border-color: white!important;
+  }
+
+  header nav button .navbar-toggler-icon{
+    color: white!important;
+  }
+
+  header nav ul li a{
+    width: 100%;
+    height: 36px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)!important;
+
+
+  }
+
+  header nav ul li #HOME, #REGISTRATE, #LOGIN{
+    padding-top: 12px!important;
+  }
+
+  header div .form-inline{
+    display: none!important;
+  }
+
   aside{
     display: none;
   }
