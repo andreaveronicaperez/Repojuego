@@ -36,6 +36,7 @@
   </div>
 </nav>
   </header>
+
   <body>
     <form class="needs-validation" novalidate>
       <div class="row">
@@ -43,46 +44,55 @@
       </div>
       <div class="form-row">
         <div class="col-12 col-md-4">
-          <label for="validationCustom01">Nombre/s</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" value="" required>
-          <div class="valid-feedback">
-            Muy bien!
-          </div>
+          <label>Nombre/s</label>
+          <input type="text" class="form-control valida-nombre"  placeholder="Nombre" value="" required>
+          <span class="error-nombre"></span>
         </div>
         <div class="col-12 col-md-4">
-          <label for="validationCustom02">Apellido</label>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" value="" required>
-          <div class="valid-feedback">
-            Genial!
-          </div>
+          <label>Apellido</label>
+          <input type="text" class="form-control"  placeholder="Apellido" value="" required>
+
         </div>
         <div class="col-12 col-md-4">
-          <label for="validationCustomUsername">Apodo</label>
+          <label>Email</label>
+          <input type="text" class="form-control"  placeholder="Email" value="" required>
+
+        </div>
+        <div class="col-12 col-md-4">
+          <label>Apodo</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <span class="input-group-text" >@</span>
             </div>
-            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Apodo" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Elegí el apodo con el que querés jugar.
-            </div>
+            <input type="text" class="form-control"  placeholder="Apodo" aria-describedby="inputGroupPrepend" required>
           </div>
+
         </div>
+
+        <div class="col-12 col-md-4">
+          <label>Contraseña</label>
+          <input type="text" class="form-control"  placeholder="Contraseña" value="" required>
+
+        </div>
+        <div class="col-12 col-md-4">
+          <label>Reingresa tu Contraseña</label>
+          <input type="text" class="form-control"  placeholder="Reingresa tu Contraseña" value="" required>
+
+        </div>
+
       </div>
       <div class="form-row">
+
         <div class="col-12 col-md-6">
-          <label for="validationCustom03">Ciudad</label>
-          <input type="text" class="form-control" id="validationCustom03" placeholder="Ciudad" required>
-          <div class="invalid-feedback">
-            Ingresá tu ciudad.
-          </div>
+          <label>Provincia</label>
+          <select type="text" class="form-control" placeholder="Provincia" required value="" name="" id="provincias">
+            <option type="text" class="form-control" placeholder="Provincia" required value="">Selecciona una provincia</option>
+          </select>
         </div>
         <div class="col-12 col-md-6">
-          <label for="validationCustom04">Provincia</label>
-          <input type="text" class="form-control" id="validationCustom04" placeholder="Provincia" required>
-          <div class="invalid-feedback">
-            Ingresá tu provincia.
-          </div>
+          <label>Ciudad</label>
+          <input type="text" class="form-control"  placeholder="Ciudad" required>
+
         </div>
       </div>
       <div class="form-group">
@@ -96,7 +106,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit">Registrarme</button>
+      <button class="boton-registo btn btn-primary" type="submit">Registrarme</button>
     </form>
     <footer class="row">
       <div class="col-12 footer">
@@ -105,27 +115,81 @@
     </footer>
 
     <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
+window.addEventListener('load', function() {
+  var boton= document.querySelector ("button.boton-registro");
+  boton.addEventListener('click',function(){
+    var errores= false;
+    var nombre= document.querySelector("input.valida-nombre");
+    var apellido= document.querySelector("input.email");
+    var apodo= document.querySelector("input.email");
+    var contraseña= document.querySelector("input.password");
+    var repiteContraseña= document.querySelector("input.email");
+    var provincia= document.querySelector("input.email");
+    var ciudad= document.querySelector("input.email");
+
+    var errorNombre= document.querySelector("span.error-nombre");
+    var errorEmail= document.querySelector("span.errorEmail");
+    var errorContraseña= document.querySelector("span.errorContraseña");
+
+    if(nombre.value == ""){
+      errorNombre.innerHTML= "Este campo es obligatorio";
+      nombre.style.border= "1px solid red";
+      errores=true;
+    }else if( email.value.length <2){
+      errorNombre.innerHTML= "Debe contener al menos 2 caracteres";
+      nombre.style.border= "1px solid red";
+      errores= true;
+    }else {
+      errorNombre.innerHTML= "";
+      nombre.style.border= "1px solid green";
+    }
+
+
+    if(contraseña.value == ""){
+      errorContraseña.innerHTML= "Este campo es obligatorio";
+      contraseña.style.border= "1px solid red";
+      errores=true;
+    }else if( contraseña.value.length <5){
+      errorContraseña.innerHTML= "Debe contener al menos 5 caracteres"
+      contraseña.style.border= "1px solid red";
+      errores= true;
+    }else {
+      errorContraseña.innerHTML= "";
+      contraseña.style.border= "1px solid green";
+    }
+
+
+
+  });
+
+});
+
+window.addEventListener('load', function() {
+
+
+fetch("https://apis.datos.gob.ar/georef/api/provincias")
+  .then(function(rta){
+    return rta.json();
+  })
+  .then(function(datos){
+    var opcionesDeProvincias= document.querySelector("#provincias");
+    for (var i = 0; i < datos.provincias.length; i++) {
+    opcionesDeProvincias.innerHTML = opcionesDeProvincias.innerHTML+ "<option>"+datos.provincias[i].nombre+"</option>";
+  }
+
+})
+  .catch(function(error){
+  console.log(error);
+});
+
+});
+
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
   </body>
 </html>
