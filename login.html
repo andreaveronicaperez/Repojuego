@@ -92,10 +92,51 @@
           Grupo9DHCopyright2019 - Todos los derechos reservados
         </div>
       </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script  type="text/javascript">
+window.addEventListener('load',function(){
+  var boton= document.querySelector ("button.loginHome");
+  boton.addEventListener('click',function(){
+    var errores= false;
+    var email= document.querySelector("input.email");
+    var contraseña= document.querySelector("input.password");
+
+    var errorEmail= document.querySelector("span.errorEmail");
+    var errorContraseña= document.querySelector("span.errorContraseña");
+
+    if(email.value == ""){
+      errorEmail.innerHTML= "Este campo es obligatorio";
+      email.style.border= "1px solid red";
+      errores=true;
+    }else if( email.value.length <5){
+      errorEmail.innerHTML= "Debe contener al menos 5 caracteres"
+      email.style.border= "1px solid red";
+      errores= true;
+    }else {
+      errorEmail.innerHTML= "";
+      email.style.border= "1px solid green";
+    }
+
+
+    if(contraseña.value == ""){
+      errorContraseña.innerHTML= "Este campo es obligatorio";
+      contraseña.style.border= "1px solid red";
+      errores=true;
+    }else if( contraseña.value.length <5){
+      errorContraseña.innerHTML= "Debe contener al menos 5 caracteres"
+      contraseña.style.border= "1px solid red";
+      errores= true;
+    }else {
+      errorContraseña.innerHTML= "";
+      contraseña.style.border= "1px solid green";
+    }
+
+
+
+  })
+})
+</script>
   </body>
 </html>
