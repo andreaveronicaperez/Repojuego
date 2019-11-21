@@ -122,6 +122,7 @@ button.btn.btn-primary:hover{
 
 footer{
   display: flex;
+  margin-top: 50px;
 }
 
 .footer{

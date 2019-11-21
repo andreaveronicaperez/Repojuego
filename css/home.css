@@ -5,7 +5,7 @@ body{
   background-attachment: fixed;
   background-size: cover;
   image-resolution: snap;
-
+  width: 100%;
 }
 
 
@@ -139,6 +139,7 @@ main div .btn-primary:hover{
   position: fixed;
   bottom: 0;
   left: 0;
+  margin-top: 40px;
 }
 
 
@@ -220,15 +221,17 @@ main div .btn-primary:hover{
     margin-left: 25%;
     height: 60px;
     width: 180px;
-
   }
 
   .footer{
     font-size: 10px;
     padding-left: 20px;
-  }
+    }
 }
 
+footer{
+  margin-top: 50px;
+}
 
 /*img {
     display:block;
