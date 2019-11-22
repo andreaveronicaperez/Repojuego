@@ -120,6 +120,15 @@ button.btn.btn-primary:hover{
   border-color: #007bff!important;
 }
 
+span.errorNombre, .errorEmail, .errorApellido, .errorApodo, .errorContraseña, .errorReContraseña, .errorProvincia {
+  color: red;
+  font-size: 14px;
+}
+
+.input-group {
+  flex-wrap: nowrap!important;
+}
+
 footer{
   display: flex;
   margin-top: 50px;

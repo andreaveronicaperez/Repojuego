@@ -20,7 +20,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">REGISTRATE <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">REkGISTRATE <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="login.html">LOGIN</a>
@@ -50,8 +50,8 @@
         </div>
         <div class="col-12 col-md-4">
           <label>Apellido</label>
-          <input type="text" class="form-control"  placeholder="Apellido" value="" required>
-
+          <input type="text" class="form-control valida-apellido"  placeholder="Apellido" value="" required>
+          <span class="errorApellido"></span>
         </div>
         <div class="col-12 col-md-4">
           <label>Email</label>
@@ -64,20 +64,22 @@
             <div class="input-group-prepend">
               <span class="input-group-text" >@</span>
             </div>
-            <input type="text" class="form-control"  placeholder="Apodo" aria-describedby="inputGroupPrepend" required>
+            <input type="text" class="form-control valida-apodo"  placeholder="Apodo" aria-describedby="inputGroupPrepend" required>
+            <span class="errorApodo"></span>
           </div>
 
         </div>
 
         <div class="col-12 col-md-4">
           <label>Contraseña</label>
-          <input type="password" class="form-control"  placeholder="Contraseña" value="" required>
+          <input type="password" class="form-control valida-contraseña"  placeholder="Contraseña" value="" required>
+          <span class="errorContraseña"></span>
 
         </div>
         <div class="col-12 col-md-4">
           <label>Reingresa tu Contraseña</label>
-          <input type="password" class="form-control"  placeholder="Reingresa tu Contraseña" value="" required>
-
+          <input type="password" class="form-control valida-recontraseña"  placeholder="Reingresa tu Contraseña" value="" required>
+          <span class="errorReContraseña"></span>
         </div>
 
       </div>
@@ -85,8 +87,9 @@
 
         <div class="col-12 col-md-6">
           <label>Provincia</label>
-          <select type="text" class="form-control" placeholder="Provincia" required value="" name="" id="provincias">
+          <select type="text" class="form-control valida-provincia" placeholder="Provincia" required value="" name="" id="provincias">
             <option type="text" class="form-control" placeholder="Provincia" required value="">Selecciona una provincia</option>
+            <span class="errorProvincia"></span>
           </select>
         </div>
         <div class="col-12 col-md-6">
