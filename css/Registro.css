@@ -120,7 +120,7 @@ button.btn.btn-primary:hover{
   border-color: #007bff!important;
 }
 
-span.errorNombre, .errorEmail, .errorApellido, .errorApodo, .errorContraseña, .errorReContraseña, .errorProvincia {
+span.errorNombre, .errorEmail, .errorApellido, .errorApodo, .errorContraseña, .errorReContraseña, .errorProvincia, .errorCiudad {
   color: red;
   font-size: 14px;
 }

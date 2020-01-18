@@ -9,6 +9,8 @@ window.addEventListener('load',function(){
     var contraseña= document.querySelector("input.valida-contraseña");
     var recontraseña= document.querySelector("input.valida-recontraseña");
     var provincia= document.querySelector("input.valida-provincia");
+    var ciudad= document.querySelector("input.valida-ciudad");
+    var nombre2= document.querySelector("input.valida-nombre2");
 
     var errorEmail= document.querySelector("span.errorEmail");
     var errorNombre= document.querySelector("span.errorNombre");
@@ -17,6 +19,8 @@ window.addEventListener('load',function(){
     var errorContraseña= document.querySelector("span.errorContraseña");
     var errorReContraseña= document.querySelector("span.errorReContraseña");
     var errorProvincia= document.querySelector("span.errorProvincia");
+    var errorCiudad= document.querySelector ("span.errorCiudad");
+    var errorNombre2= document.querySelector("span.errorNombre2");
 
     var regexMail= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     var regexContraseña = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$";
@@ -106,6 +110,19 @@ window.addEventListener('load',function(){
       recontraseña.style.border= "1px solid green";
     }
 
+    if(ciudad.value == ''){
+      errorCiudad.innerHTML= "Este campo es obligatorio";
+      ciudad.style.border= "1px solid red";
+      errores=true;
+    }else if(ciudad.value.length <3){
+      errorCiudad.innerHTML= "Debe contener al menos 3 caracteres"
+      ciudad.style.border= "1px solid red";
+      errores= true;
+    }else {
+      errorCiudad.innerHTML= "";
+      ciudad.style.border= "1px solid green";
+    }
+
 
     if(provincia.value != "Selecciona una provincia"){
       errorProvincia.innerHTML= "Debe seleccionar una provincia";
@@ -115,7 +132,6 @@ window.addEventListener('load',function(){
       errorReContraseña.innerHTML= "";
       recontraseña.style.border= "1px solid green";
     }
-
 
 
   });
