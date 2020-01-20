@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `basejuegos` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `basejuegos`;
 -- MySQL dump 10.13  Distrib 8.0.18, for Win64 (x86_64)
 --
 -- Host: localhost    Database: basejuegos
@@ -32,7 +30,6 @@ CREATE TABLE `usuarios` (
   `apodo` varchar(45) NOT NULL,
   `provincia` varchar(45) NOT NULL,
   `ciudad` varchar(45) NOT NULL,
-  `edad` int(11) NOT NULL,
   `puntos` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`idusuarios`),
   UNIQUE KEY `email_UNIQUE` (`email`),
@@ -46,7 +43,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'ailin','merlo','ailin@gmail.com','amerlo','buenos aires','moron',32,0),(2,'eliana','fiqueni','ely@gmail.com','efiqueni','buenos aires','la reja',30,0);
+INSERT INTO `usuarios` VALUES (1,'ailin','merlo','ailin@gmail.com','amerlo','buenos aires','moron',0),(2,'eliana','fiqueni','ely@gmail.com','efiqueni','buenos aires','la reja',0);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -59,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-18 21:07:09
+-- Dump completed on 2020-01-19 21:10:09
